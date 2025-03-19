@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <Configurations>
+      Debug 2024;Release 2024;
+      Debug 2025;Release 2025;
+    </Configurations>
+  </PropertyGroup>
+
+  <Import Project=".\Revit2024.targets" Condition="$(Configuration.Contains('2024'))" />
+  <Import Project=".\Revit2025.targets" Condition="$(Configuration.Contains('2025'))" />
+
+</Project>

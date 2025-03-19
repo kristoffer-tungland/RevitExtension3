@@ -1,0 +1,21 @@
+<Project>
+  <!-- Define version-specific properties before importing CommonRevit.targets -->
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <MainRevitVersion>2025</MainRevitVersion>
+    <RevitVersion>2025.0.0</RevitVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <!-- Revit API package reference -->
+  <ItemGroup>
+    <PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2025.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

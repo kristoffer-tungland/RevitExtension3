@@ -1,0 +1,21 @@
+<Project>
+  <!-- Define version-specific properties before importing CommonRevit.targets -->
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <MainRevitVersion>2024</MainRevitVersion>
+    <RevitVersion>2024.0.0</RevitVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+
+  <!-- Revit API package reference -->
+  <ItemGroup>
+    <PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2024.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

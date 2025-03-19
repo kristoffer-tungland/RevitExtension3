@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <!-- Default target framework for IDE tooling -->
+    <TargetFramework Condition="'$(TargetFramework)' == ''">net48</TargetFramework>
+  </PropertyGroup>
+</Project>
